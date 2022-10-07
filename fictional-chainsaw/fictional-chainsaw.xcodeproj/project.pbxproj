@@ -1,0 +1,977 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		809682EF28F0B67100D7C896 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809682EE28F0B67100D7C896 /* ContentView.swift */; };
+		809682F328F0B67100D7C896 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809682F228F0B67100D7C896 /* ViewControllerRepresentable.swift */; };
+		809682F628F0B67100D7C896 /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = 809682F528F0B67100D7C896 /* Synth.aif */; };
+		809682F828F0B67100D7C896 /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809682F728F0B67100D7C896 /* SimplePlayEngine.swift */; };
+		809682FA28F0B67100D7C896 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809682F928F0B67100D7C896 /* TypeAliases.swift */; };
+		809682FD28F0B67100D7C896 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809682FC28F0B67100D7C896 /* StringHelpers.swift */; };
+		8096830028F0B67100D7C896 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809682FF28F0B67100D7C896 /* MIDIManager.swift */; };
+		8096830328F0B67100D7C896 /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096830228F0B67100D7C896 /* AudioUnitHostModel.swift */; };
+		8096830528F0B67100D7C896 /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096830428F0B67100D7C896 /* AudioUnitViewModel.swift */; };
+		8096830728F0B67100D7C896 /* fictional_chainsawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096830628F0B67100D7C896 /* fictional_chainsawApp.swift */; };
+		8096830928F0B67200D7C896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8096830828F0B67200D7C896 /* Assets.xcassets */; };
+		8096830C28F0B67200D7C896 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8096830B28F0B67200D7C896 /* Preview Assets.xcassets */; };
+		8096831728F0B67200D7C896 /* fictional_chainsawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096831628F0B67200D7C896 /* fictional_chainsawTests.swift */; };
+		8096832128F0B67200D7C896 /* fictional_chainsawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096832028F0B67200D7C896 /* fictional_chainsawUITests.swift */; };
+		8096832328F0B67200D7C896 /* fictional_chainsawUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096832228F0B67200D7C896 /* fictional_chainsawUITestsLaunchTests.swift */; };
+		8096832928F0B67200D7C896 /* fictional-chainsawExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8096832828F0B67200D7C896 /* fictional-chainsawExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8096832E28F0B67200D7C896 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8096832D28F0B67200D7C896 /* README.md */; };
+		8096833328F0B67200D7C896 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096833228F0B67200D7C896 /* ParameterSpecBase.swift */; };
+		8096833628F0B67200D7C896 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096833528F0B67200D7C896 /* CrossPlatform.swift */; };
+		8096833828F0B67200D7C896 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096833728F0B67200D7C896 /* String+Utils.swift */; };
+		8096833C28F0B67200D7C896 /* fictional_chainsawExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8096833B28F0B67200D7C896 /* fictional_chainsawExtensionAudioUnit.mm */; };
+		8096833F28F0B67200D7C896 /* fictional_chainsawExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8096833E28F0B67200D7C896 /* fictional_chainsawExtensionAUProcessHelper.hpp */; };
+		8096834128F0B67200D7C896 /* fictional_chainsawExtensionBufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8096834028F0B67200D7C896 /* fictional_chainsawExtensionBufferedAudioBus.hpp */; };
+		8096834528F0B67200D7C896 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096834428F0B67200D7C896 /* Parameters.swift */; };
+		8096834828F0B67200D7C896 /* fictional_chainsawExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8096834728F0B67200D7C896 /* fictional_chainsawExtensionDSPKernel.hpp */; };
+		8096834B28F0B67200D7C896 /* fictional_chainsawExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096834A28F0B67200D7C896 /* fictional_chainsawExtensionMainView.swift */; };
+		8096834D28F0B67200D7C896 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096834C28F0B67200D7C896 /* ParameterSlider.swift */; };
+		8096835228F0B67200D7C896 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8096835028F0B67200D7C896 /* MainInterface.storyboard */; };
+		8096835428F0B67200D7C896 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096835328F0B67200D7C896 /* ObservableAUParameter.swift */; };
+		8096835628F0B67200D7C896 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096835528F0B67200D7C896 /* AudioUnitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8096831328F0B67200D7C896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809682E328F0B67100D7C896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 809682EA28F0B67100D7C896;
+			remoteInfo = "fictional-chainsaw";
+		};
+		8096831D28F0B67200D7C896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809682E328F0B67100D7C896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 809682EA28F0B67100D7C896;
+			remoteInfo = "fictional-chainsaw";
+		};
+		8096832A28F0B67200D7C896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809682E328F0B67100D7C896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8096832728F0B67200D7C896;
+			remoteInfo = "fictional-chainsawExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8096835D28F0B67200D7C896 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8096832928F0B67200D7C896 /* fictional-chainsawExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		809682EB28F0B67100D7C896 /* fictional-chainsaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fictional-chainsaw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		809682EE28F0B67100D7C896 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		809682F228F0B67100D7C896 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		809682F528F0B67100D7C896 /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		809682F728F0B67100D7C896 /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		809682F928F0B67100D7C896 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		809682FC28F0B67100D7C896 /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		809682FF28F0B67100D7C896 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		8096830228F0B67100D7C896 /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		8096830428F0B67100D7C896 /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		8096830628F0B67100D7C896 /* fictional_chainsawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fictional_chainsawApp.swift; sourceTree = "<group>"; };
+		8096830828F0B67200D7C896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8096830B28F0B67200D7C896 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8096830D28F0B67200D7C896 /* fictional_chainsaw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fictional_chainsaw.entitlements; sourceTree = "<group>"; };
+		8096831228F0B67200D7C896 /* fictional-chainsawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fictional-chainsawTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8096831628F0B67200D7C896 /* fictional_chainsawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fictional_chainsawTests.swift; sourceTree = "<group>"; };
+		8096831C28F0B67200D7C896 /* fictional-chainsawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fictional-chainsawUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8096832028F0B67200D7C896 /* fictional_chainsawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fictional_chainsawUITests.swift; sourceTree = "<group>"; };
+		8096832228F0B67200D7C896 /* fictional_chainsawUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fictional_chainsawUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8096832828F0B67200D7C896 /* fictional-chainsawExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "fictional-chainsawExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8096832D28F0B67200D7C896 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8096833028F0B67200D7C896 /* fictional_chainsawExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fictional_chainsawExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		8096833228F0B67200D7C896 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		8096833528F0B67200D7C896 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		8096833728F0B67200D7C896 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		8096833A28F0B67200D7C896 /* fictional_chainsawExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fictional_chainsawExtensionAudioUnit.h; sourceTree = "<group>"; };
+		8096833B28F0B67200D7C896 /* fictional_chainsawExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = fictional_chainsawExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		8096833E28F0B67200D7C896 /* fictional_chainsawExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fictional_chainsawExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		8096834028F0B67200D7C896 /* fictional_chainsawExtensionBufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fictional_chainsawExtensionBufferedAudioBus.hpp; sourceTree = "<group>"; };
+		8096834328F0B67200D7C896 /* fictional_chainsawExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fictional_chainsawExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		8096834428F0B67200D7C896 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		8096834728F0B67200D7C896 /* fictional_chainsawExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fictional_chainsawExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		8096834A28F0B67200D7C896 /* fictional_chainsawExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fictional_chainsawExtensionMainView.swift; sourceTree = "<group>"; };
+		8096834C28F0B67200D7C896 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		8096835128F0B67200D7C896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		8096835328F0B67200D7C896 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		8096835528F0B67200D7C896 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		8096835728F0B67200D7C896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		809682E828F0B67100D7C896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8096830F28F0B67200D7C896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8096831928F0B67200D7C896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8096832528F0B67200D7C896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		809682E228F0B67100D7C896 = {
+			isa = PBXGroup;
+			children = (
+				809682ED28F0B67100D7C896 /* fictional-chainsaw */,
+				8096831528F0B67200D7C896 /* fictional-chainsawTests */,
+				8096831F28F0B67200D7C896 /* fictional-chainsawUITests */,
+				8096832C28F0B67200D7C896 /* fictional-chainsawExtension */,
+				809682EC28F0B67100D7C896 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		809682EC28F0B67100D7C896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				809682EB28F0B67100D7C896 /* fictional-chainsaw.app */,
+				8096831228F0B67200D7C896 /* fictional-chainsawTests.xctest */,
+				8096831C28F0B67200D7C896 /* fictional-chainsawUITests.xctest */,
+				8096832828F0B67200D7C896 /* fictional-chainsawExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		809682ED28F0B67100D7C896 /* fictional-chainsaw */ = {
+			isa = PBXGroup;
+			children = (
+				809682EE28F0B67100D7C896 /* ContentView.swift */,
+				8096830628F0B67100D7C896 /* fictional_chainsawApp.swift */,
+				8096830828F0B67200D7C896 /* Assets.xcassets */,
+				8096830D28F0B67200D7C896 /* fictional_chainsaw.entitlements */,
+				809682F028F0B67100D7C896 /* Common */,
+				8096830128F0B67100D7C896 /* Model */,
+				8096830A28F0B67200D7C896 /* Preview Content */,
+			);
+			path = "fictional-chainsaw";
+			sourceTree = "<group>";
+		};
+		809682F028F0B67100D7C896 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				809682F928F0B67100D7C896 /* TypeAliases.swift */,
+				809682F128F0B67100D7C896 /* UI */,
+				809682F428F0B67100D7C896 /* Audio */,
+				809682FB28F0B67100D7C896 /* String */,
+				809682FE28F0B67100D7C896 /* MIDI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		809682F128F0B67100D7C896 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				809682F228F0B67100D7C896 /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		809682F428F0B67100D7C896 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				809682F528F0B67100D7C896 /* Synth.aif */,
+				809682F728F0B67100D7C896 /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		809682FB28F0B67100D7C896 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				809682FC28F0B67100D7C896 /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		809682FE28F0B67100D7C896 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				809682FF28F0B67100D7C896 /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		8096830128F0B67100D7C896 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8096830228F0B67100D7C896 /* AudioUnitHostModel.swift */,
+				8096830428F0B67100D7C896 /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8096830A28F0B67200D7C896 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8096830B28F0B67200D7C896 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8096831528F0B67200D7C896 /* fictional-chainsawTests */ = {
+			isa = PBXGroup;
+			children = (
+				8096831628F0B67200D7C896 /* fictional_chainsawTests.swift */,
+			);
+			path = "fictional-chainsawTests";
+			sourceTree = "<group>";
+		};
+		8096831F28F0B67200D7C896 /* fictional-chainsawUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8096832028F0B67200D7C896 /* fictional_chainsawUITests.swift */,
+				8096832228F0B67200D7C896 /* fictional_chainsawUITestsLaunchTests.swift */,
+			);
+			path = "fictional-chainsawUITests";
+			sourceTree = "<group>";
+		};
+		8096832C28F0B67200D7C896 /* fictional-chainsawExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8096832D28F0B67200D7C896 /* README.md */,
+				8096835728F0B67200D7C896 /* Info.plist */,
+				8096832F28F0B67200D7C896 /* Common */,
+				8096834228F0B67200D7C896 /* Parameters */,
+				8096834628F0B67200D7C896 /* DSP */,
+				8096834928F0B67200D7C896 /* UI */,
+			);
+			path = "fictional-chainsawExtension";
+			sourceTree = "<group>";
+		};
+		8096832F28F0B67200D7C896 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8096833028F0B67200D7C896 /* fictional_chainsawExtension-Bridging-Header.h */,
+				8096833128F0B67200D7C896 /* Parameters */,
+				8096833428F0B67200D7C896 /* Utility */,
+				8096833928F0B67200D7C896 /* Audio Unit */,
+				8096833D28F0B67200D7C896 /* DSP */,
+				8096834E28F0B67200D7C896 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8096833128F0B67200D7C896 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				8096833228F0B67200D7C896 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		8096833428F0B67200D7C896 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8096833528F0B67200D7C896 /* CrossPlatform.swift */,
+				8096833728F0B67200D7C896 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8096833928F0B67200D7C896 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				8096833A28F0B67200D7C896 /* fictional_chainsawExtensionAudioUnit.h */,
+				8096833B28F0B67200D7C896 /* fictional_chainsawExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		8096833D28F0B67200D7C896 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				8096833E28F0B67200D7C896 /* fictional_chainsawExtensionAUProcessHelper.hpp */,
+				8096834028F0B67200D7C896 /* fictional_chainsawExtensionBufferedAudioBus.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		8096834228F0B67200D7C896 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				8096834328F0B67200D7C896 /* fictional_chainsawExtensionParameterAddresses.h */,
+				8096834428F0B67200D7C896 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		8096834628F0B67200D7C896 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				8096834728F0B67200D7C896 /* fictional_chainsawExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		8096834928F0B67200D7C896 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8096834A28F0B67200D7C896 /* fictional_chainsawExtensionMainView.swift */,
+				8096834C28F0B67200D7C896 /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8096834E28F0B67200D7C896 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8096835328F0B67200D7C896 /* ObservableAUParameter.swift */,
+				8096835528F0B67200D7C896 /* AudioUnitViewController.swift */,
+				8096834F28F0B67200D7C896 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8096834F28F0B67200D7C896 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				8096835028F0B67200D7C896 /* MainInterface.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		809682EA28F0B67100D7C896 /* fictional-chainsaw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8096835E28F0B67200D7C896 /* Build configuration list for PBXNativeTarget "fictional-chainsaw" */;
+			buildPhases = (
+				809682E728F0B67100D7C896 /* Sources */,
+				809682E828F0B67100D7C896 /* Frameworks */,
+				809682E928F0B67100D7C896 /* Resources */,
+				8096835D28F0B67200D7C896 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8096832B28F0B67200D7C896 /* PBXTargetDependency */,
+			);
+			name = "fictional-chainsaw";
+			productName = "fictional-chainsaw";
+			productReference = 809682EB28F0B67100D7C896 /* fictional-chainsaw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8096831128F0B67200D7C896 /* fictional-chainsawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8096836128F0B67200D7C896 /* Build configuration list for PBXNativeTarget "fictional-chainsawTests" */;
+			buildPhases = (
+				8096830E28F0B67200D7C896 /* Sources */,
+				8096830F28F0B67200D7C896 /* Frameworks */,
+				8096831028F0B67200D7C896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8096831428F0B67200D7C896 /* PBXTargetDependency */,
+			);
+			name = "fictional-chainsawTests";
+			productName = "fictional-chainsawTests";
+			productReference = 8096831228F0B67200D7C896 /* fictional-chainsawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8096831B28F0B67200D7C896 /* fictional-chainsawUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8096836428F0B67200D7C896 /* Build configuration list for PBXNativeTarget "fictional-chainsawUITests" */;
+			buildPhases = (
+				8096831828F0B67200D7C896 /* Sources */,
+				8096831928F0B67200D7C896 /* Frameworks */,
+				8096831A28F0B67200D7C896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8096831E28F0B67200D7C896 /* PBXTargetDependency */,
+			);
+			name = "fictional-chainsawUITests";
+			productName = "fictional-chainsawUITests";
+			productReference = 8096831C28F0B67200D7C896 /* fictional-chainsawUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8096832728F0B67200D7C896 /* fictional-chainsawExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8096835A28F0B67200D7C896 /* Build configuration list for PBXNativeTarget "fictional-chainsawExtension" */;
+			buildPhases = (
+				8096832428F0B67200D7C896 /* Sources */,
+				8096832528F0B67200D7C896 /* Frameworks */,
+				8096832628F0B67200D7C896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fictional-chainsawExtension";
+			productName = "fictional-chainsawExtension";
+			productReference = 8096832828F0B67200D7C896 /* fictional-chainsawExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		809682E328F0B67100D7C896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					809682EA28F0B67100D7C896 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					8096831128F0B67200D7C896 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 809682EA28F0B67100D7C896;
+					};
+					8096831B28F0B67200D7C896 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 809682EA28F0B67100D7C896;
+					};
+					8096832728F0B67200D7C896 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 809682E628F0B67100D7C896 /* Build configuration list for PBXProject "fictional-chainsaw" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 809682E228F0B67100D7C896;
+			productRefGroup = 809682EC28F0B67100D7C896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				809682EA28F0B67100D7C896 /* fictional-chainsaw */,
+				8096831128F0B67200D7C896 /* fictional-chainsawTests */,
+				8096831B28F0B67200D7C896 /* fictional-chainsawUITests */,
+				8096832728F0B67200D7C896 /* fictional-chainsawExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		809682E928F0B67100D7C896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8096830928F0B67200D7C896 /* Assets.xcassets in Resources */,
+				8096830C28F0B67200D7C896 /* Preview Assets.xcassets in Resources */,
+				809682F628F0B67100D7C896 /* Synth.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8096831028F0B67200D7C896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8096831A28F0B67200D7C896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8096832628F0B67200D7C896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8096834128F0B67200D7C896 /* fictional_chainsawExtensionBufferedAudioBus.hpp in Resources */,
+				8096835228F0B67200D7C896 /* MainInterface.storyboard in Resources */,
+				8096834828F0B67200D7C896 /* fictional_chainsawExtensionDSPKernel.hpp in Resources */,
+				8096833F28F0B67200D7C896 /* fictional_chainsawExtensionAUProcessHelper.hpp in Resources */,
+				8096832E28F0B67200D7C896 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		809682E728F0B67100D7C896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8096830328F0B67100D7C896 /* AudioUnitHostModel.swift in Sources */,
+				8096830728F0B67100D7C896 /* fictional_chainsawApp.swift in Sources */,
+				8096830528F0B67100D7C896 /* AudioUnitViewModel.swift in Sources */,
+				809682FD28F0B67100D7C896 /* StringHelpers.swift in Sources */,
+				809682FA28F0B67100D7C896 /* TypeAliases.swift in Sources */,
+				8096830028F0B67100D7C896 /* MIDIManager.swift in Sources */,
+				809682EF28F0B67100D7C896 /* ContentView.swift in Sources */,
+				809682F328F0B67100D7C896 /* ViewControllerRepresentable.swift in Sources */,
+				809682F828F0B67100D7C896 /* SimplePlayEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8096830E28F0B67200D7C896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8096831728F0B67200D7C896 /* fictional_chainsawTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8096831828F0B67200D7C896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8096832328F0B67200D7C896 /* fictional_chainsawUITestsLaunchTests.swift in Sources */,
+				8096832128F0B67200D7C896 /* fictional_chainsawUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8096832428F0B67200D7C896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8096834528F0B67200D7C896 /* Parameters.swift in Sources */,
+				8096834B28F0B67200D7C896 /* fictional_chainsawExtensionMainView.swift in Sources */,
+				8096835428F0B67200D7C896 /* ObservableAUParameter.swift in Sources */,
+				8096833C28F0B67200D7C896 /* fictional_chainsawExtensionAudioUnit.mm in Sources */,
+				8096833328F0B67200D7C896 /* ParameterSpecBase.swift in Sources */,
+				8096835628F0B67200D7C896 /* AudioUnitViewController.swift in Sources */,
+				8096834D28F0B67200D7C896 /* ParameterSlider.swift in Sources */,
+				8096833628F0B67200D7C896 /* CrossPlatform.swift in Sources */,
+				8096833828F0B67200D7C896 /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8096831428F0B67200D7C896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 809682EA28F0B67100D7C896 /* fictional-chainsaw */;
+			targetProxy = 8096831328F0B67200D7C896 /* PBXContainerItemProxy */;
+		};
+		8096831E28F0B67200D7C896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 809682EA28F0B67100D7C896 /* fictional-chainsaw */;
+			targetProxy = 8096831D28F0B67200D7C896 /* PBXContainerItemProxy */;
+		};
+		8096832B28F0B67200D7C896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8096832728F0B67200D7C896 /* fictional-chainsawExtension */;
+			targetProxy = 8096832A28F0B67200D7C896 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8096835028F0B67200D7C896 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8096835128F0B67200D7C896 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8096835828F0B67200D7C896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "fictional-chainsaw/fictional_chainsaw.entitlements";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8096835928F0B67200D7C896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "fictional-chainsaw/fictional_chainsaw.entitlements";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8096835B28F0B67200D7C896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2LW9A46T78;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "fictional-chainsawExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "fictional-chainsawExtension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.compozelabs.fictional-chainsaw.fictional-chainsawExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "fictional-chainsawExtension/Common/fictional_chainsawExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8096835C28F0B67200D7C896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2LW9A46T78;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "fictional-chainsawExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "fictional-chainsawExtension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.compozelabs.fictional-chainsaw.fictional-chainsawExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "fictional-chainsawExtension/Common/fictional_chainsawExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8096835F28F0B67200D7C896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"fictional-chainsaw/Preview Content\"";
+				DEVELOPMENT_TEAM = 2LW9A46T78;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.compozelabs.fictional-chainsaw";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8096836028F0B67200D7C896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"fictional-chainsaw/Preview Content\"";
+				DEVELOPMENT_TEAM = 2LW9A46T78;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.compozelabs.fictional-chainsaw";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8096836228F0B67200D7C896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2LW9A46T78;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.compozelabs.fictional-chainsawTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fictional-chainsaw.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fictional-chainsaw";
+			};
+			name = Debug;
+		};
+		8096836328F0B67200D7C896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2LW9A46T78;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.compozelabs.fictional-chainsawTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fictional-chainsaw.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fictional-chainsaw";
+			};
+			name = Release;
+		};
+		8096836528F0B67200D7C896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2LW9A46T78;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.compozelabs.fictional-chainsawUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "fictional-chainsaw";
+			};
+			name = Debug;
+		};
+		8096836628F0B67200D7C896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2LW9A46T78;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.compozelabs.fictional-chainsawUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "fictional-chainsaw";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		809682E628F0B67100D7C896 /* Build configuration list for PBXProject "fictional-chainsaw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8096835828F0B67200D7C896 /* Debug */,
+				8096835928F0B67200D7C896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8096835A28F0B67200D7C896 /* Build configuration list for PBXNativeTarget "fictional-chainsawExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8096835B28F0B67200D7C896 /* Debug */,
+				8096835C28F0B67200D7C896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8096835E28F0B67200D7C896 /* Build configuration list for PBXNativeTarget "fictional-chainsaw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8096835F28F0B67200D7C896 /* Debug */,
+				8096836028F0B67200D7C896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8096836128F0B67200D7C896 /* Build configuration list for PBXNativeTarget "fictional-chainsawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8096836228F0B67200D7C896 /* Debug */,
+				8096836328F0B67200D7C896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8096836428F0B67200D7C896 /* Build configuration list for PBXNativeTarget "fictional-chainsawUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8096836528F0B67200D7C896 /* Debug */,
+				8096836628F0B67200D7C896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 809682E328F0B67100D7C896 /* Project object */;
+}
